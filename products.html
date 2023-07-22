@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flower.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div id="navbar__logo">
+                <div class="logo-holder logo-7" id="logo">
+                    <img class="flower" src="img/flower-logo.png">
+                    <div class="left">
+                        <h3>Flora</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/leylagardendshop-master/index.html" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/leylagardendshop-master/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contacts" class="navbar__links" onclick="myFunction()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="conteiner ">
+            <div class="con">
+                         <div class="basket-card">
+                            <div class="card">
+                                <div class="basket">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Your order</h4>
+                                        <br>
+                                        <div data-cart-empty class="alert alert-secondary" role="alert">
+                                            <p>Basket empty</p>
+                                        </div>
+                                        <div class="content-wrapper">
+                                            <div class="cart-wrapper">
+            
+                                            </div>
+                                        </div>
+                                        <div class="cart-total">
+                                            <p data-cart-delivery class="none">
+                                                <span class="h5">Delivery:</span>
+                                                <span class="delivery-cost">250 $</span><br>
+                                                <span class="small">Free when ordering from 600 $</span>
+                                            </p>
+                                            <p><span class="h5">Total:</span>
+                                                <span class="total-price">0</span>
+                                                <span class="rouble">$</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div id="order-form" class="card-body border-top">
+                                        <h4 class="card-title">Make order</h4>
+                                            <br>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Your telephone number">
+                                                </div>
+                                                <br>
+                                                <button button data-cart type="button" class="btn btn-block btn-outline-warning">Order</button>
+            
+                                            </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="content-wrapper">
+                
+                <div class="cart-wrapper" id="products-container">
+   
+                </div>
+            </div>
+        </div>
+
+            <br>
+        <footer>
+            <div class="foot-text">
+                <h2>Let`s Get in Touch !</h2>
+                <p style="text-indent: 25px">Have any questions about our products? Looking to partner with us or
+                    inquire about a custom floral arrangement? Click the link below and shoot us an email!
+                <p class="btn orange circular" href="#">FLORA@GMAIL.COM</p>
+                </p>
+
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/instagram.svg"
+                                alt="instagram"></a></li>
+                    <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/twitter.svg"
+                                alt="twitter"></a></li>
+                    <li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/facebook.svg"
+                                alt="facebook"></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/renderProducts.js"></script>
+    <script src="./js/calcCartPrice.js"></script>
+    <script src="./js/toggleCartStatus.js"></script>
+    <script src="./js/counter-02.js"></script>
+    <script src="./js/cart.js"></script>
+
+    <script>
+        function myFunction() {
+            alert("tel.number:999-9999-9999");
+        }
+    </script>
+</body>
+
+
+
+</html>

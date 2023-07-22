@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"title": "Honey-b",
+		"arragment": "Small arragement",
+		"price": 300,
+		"imgSrc": "honey-b.png"
+	},
+	{
+		"id": 2,
+		"title": "The Ember",
+		"arragment": "Small arragement",
+		"price": 250,
+		"imgSrc": "ember.png"
+	},
+	{
+		"id": 3,
+		"title": "The Ollie",
+		"arragment": "Medium arragement",
+		"price": 230,
+		"imgSrc": "ollie.png"
+	},
+	{
+		"id": 4,
+		"title": "The Henna",
+		"arragment": "Large arragement",
+		"price": 320,
+		"imgSrc": "henna.png"
+	}
+]

@@ -1,0 +1,258 @@
+
+.con {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.card {
+  opacity: 0.8;
+  background-color: #8cd8e9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: "Nunito Sans";
+}
+
+.gul-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.cart-wrapper {
+  margin-right: auto;
+  padding-top: 20px;
+  display: grid;
+  gap: 40px 30px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.basket-card {
+  margin-left: auto;
+  width: 30%;
+  padding-top: 38px;
+}
+
+.content-wrapper {
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+.card-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-muted {
+  text-align: center;
+  color: #333333;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.btn-outline-warning {
+  text-align: center;
+  background-color: #0c137c;
+  border-color: #090859;
+}
+
+.btn-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #0c137c;
+  border-color: #090859;
+}
+
+span {
+  cursor: pointer;
+}
+
+.number {
+  margin: 0 auto;
+}
+
+.minus,
+.plus {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  background: #f2f2f2;
+  text-align: center;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.items__control:hover {
+  background: #eb5a1e;
+  color: #fff;
+}
+
+.btn-outline-warning {
+  text-align: center;
+  color: #eb5a1e;
+  border-color: #eb5a1e;
+}
+
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #0c137c;
+  border-color: #090859;
+}
+
+
+.cart-item__top {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 15px;
+}
+.cart-item__img img {
+  max-width: 100px;
+  height: auto;
+  padding-right: 5px;
+}
+
+.cart-item__title {
+  font-family: "Nunito Sans", serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.alert-secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.cart-total {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.free {
+  color: #0ea107;
+}
+
+.total-price {
+  color: #eb5a1e;
+}
+
+.rouble {
+  color: #eb5a1e;
+}
+
+.none {
+  display: none;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-control::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:focus {
+  border-color: #7ebcb9;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .con{
+    flex-direction:column;
+
+  }
+  .basket-card,
+  .content-wrapper {
+      width: 100%; 
+      display: inline-block;
+  }
+  .cart-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .card {
+    max-width: 200px;
+  }
+}
+
